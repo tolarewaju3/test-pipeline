@@ -1823,6 +1823,4 @@ class OpenShiftDSL implements Serializable {
         }
     }
 
-    return this;
-
 }
