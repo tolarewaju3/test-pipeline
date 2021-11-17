@@ -8,7 +8,6 @@ pipeline {
 
                 script {
                     modules.first = load "${rootDir}@script/NonCPS.java"
-                    modules.second = load "${rootDir}@script/OpenShiftDSL.groovy"
                 }
             }
         }
