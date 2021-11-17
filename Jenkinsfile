@@ -7,7 +7,7 @@ pipeline {
                 echo 'Hello World'
 
                 script {
-                    modules.first = load "${rootDir}@script/NonCPS.java"
+                    modules.first = load "first.groovy"
                 }
             }
         }
