@@ -7,7 +7,8 @@ pipeline {
                 echo 'Hello World'
 
                 script {
-                     modules.first = load "${rootDir}@script/OpenShiftDSL.groovy"
+                    modules.first = load "${rootDir}@script/NonCPS.java"
+                    modules.second = load "${rootDir}@script/OpenShiftDSL.groovy"
                 }
             }
         }
