@@ -12,6 +12,7 @@ pipeline {
                 echo 'Hello World'
 
                 script {
+                    def rootDir = pwd()
                     modules.first = load "${rootDir}/first.groovy"
                 }
             }
