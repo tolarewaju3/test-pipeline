@@ -11,9 +11,9 @@ pipeline {
 
                 echo 'Hello World'
 
-                sh "wget https://mirror.openshift.com/pub/openshift-v4/clients/oc/latest/linux/oc.tar.gz"
-
                 script {
+                    wget https://mirror.openshift.com/pub/openshift-v4/clients/oc/latest/linux/oc.tar.gz
+
                     def rootDir = pwd()
                     println("Current Directory: " + rootDir)
                     //def example = load "${rootDir}/OpenShiftDSL.groovy"
