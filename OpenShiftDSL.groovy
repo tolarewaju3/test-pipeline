@@ -1,5 +1,7 @@
 package com.openshift.jenkins.plugins
 
+@Grab('com.openshift.jenkins.plugins:openshift-client:1.0.35')
+
 import com.cloudbees.groovy.cps.NonCPS
 import com.cloudbees.plugins.credentials.CredentialsProvider
 import com.openshift.jenkins.plugins.pipeline.OcAction
