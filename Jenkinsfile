@@ -13,7 +13,8 @@ pipeline {
 
                 script {
                     def rootDir = pwd()
-                    modules.first = load "${rootDir}/first.groovy"
+                    println("Current Directory: " + rootDir)
+                    //modules.first = load "${rootDir}/first.groovy"
                 }
             }
         }
