@@ -12,7 +12,7 @@ pipeline {
                 echo 'Hello World'
 
                 script {
-                    modules.first = load "first.groovy"
+                    modules.first = load "${rootDir}/first.groovy"
                 }
             }
         }
